@@ -7,5 +7,6 @@ https://cdnjs.com/libraries/font-awesome
 
 =======================================================
 
+C:\react\health-panel>npm init -y
 
 

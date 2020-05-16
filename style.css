@@ -12,4 +12,26 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
 
+.container > div {
+    height: 210px;
+    background-size: cover;
+
+    /* This is the magic lays
+       https://caniuse.com/#search=background-attachment
+       Surprisingly supported in IE 11 as well
+    */
+    background-attachment: fixed;
+}
+
+.bg1 {
+    background: url("./img/bg1.jpg");
+}
+.bg2 {
+    background: url("./img/bg2.jpg");
+}

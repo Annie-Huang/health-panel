@@ -5,9 +5,23 @@ https://github.com/Annie-Huang/health-panel
 
 https://cdnjs.com/libraries/font-awesome
 https://fonts.google.com/specimen/Roboto?sidebar.open&selection.family=Roboto:wght@300;400
+https://css-tricks.com/the-difference-between-nth-child-and-nth-of-type/
 
 =======================================================
 
 C:\react\health-panel>npm init -y
 
 
+<section>
+   <h1>Words</h1>
+   <p>Little</p>
+   <p>Piggy</p>    <!-- Want this one -->
+</section>
+
+p:nth-child(2) { color: red; } /* Now incorrect */
+p:nth-of-type(2) { color: red; } /* Still works */
+
+I feel like :nth-of-type is less fragile and more useful in general, despite :nth-child being more common (in my eyes).
+How often do you think “I want to select the second child of a parent if it just happens to be a paragraph.”
+Possibly sometimes, but more likely you want to “select the second paragraph” or “select every third table row,”
+which are cases where :nth-of-type is (again, in my eyes) a stronger choice.
